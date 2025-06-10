@@ -27,4 +27,3 @@ Um dos principais desafios enfrentados foi a exibição das tarefas cadastradas 
 
 ## 🎬 Demonstração do Projeto
 
-[📽️ Clique aqui para assistir ao vídeo da demonstração](./media/entrega_final.mp4)

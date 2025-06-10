@@ -24,3 +24,7 @@ dotenv (gestão de variáveis de ambiente)
 
 💡 Desafios e Soluções
 Um dos principais desafios enfrentados foi a exibição das tarefas cadastradas de forma organizada na interface do usuário. Inicialmente, houve dificuldades na integração entre o backend e o frontend para apresentar os dados corretamente. A solução adotada foi utilizar a Fetch API para buscar os dados em formato JSON e inseri-los dinamicamente no DOM, estruturando-os em uma tabela clara e funcional. Essa abordagem garantiu uma visualização mais intuitiva e uma experiência de uso fluida.
+
+## 🎬 Demonstração do Projeto
+
+[📽️ Clique aqui para assistir ao vídeo da demonstração](./media/entrega_final.mp4)

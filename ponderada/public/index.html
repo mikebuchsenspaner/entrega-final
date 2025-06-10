@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minhas Tarefas</title>
+  <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+  <h1>Agenda de Tarefas</h1>
+
+  <form id="task-form">
+    <input type="text" id="titulo" placeholder="Título" required />
+    <input type="text" id="descricao" placeholder="Descrição" required />
+    <input type="date" id="data" required />
+    <input type="time" id="hora" required />
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <div id="task-list"></div>
+
+  <script src="/scripts.js"></script>
+</body>
+</html>

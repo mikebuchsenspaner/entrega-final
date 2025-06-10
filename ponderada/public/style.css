@@ -1,0 +1,63 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  color: #2d3436;
+}
+
+form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #0984e3;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #74b9ff;
+}
+
+#task-list {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #636e72;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-left: 5px solid #00cec9;
+  border-radius: 4px;
+}
+
+li.feita {
+  text-decoration: line-through;
+  color: #999;
+  border-left: 5px solid #636e72;
+}

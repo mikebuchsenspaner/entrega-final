@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minhas Tarefas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      margin-right: 10px;
+      padding: 5px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      color: #007bff;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Agenda de Tarefas</h1>
+
+  <form id="task-form">
+    <input type="text" id="titulo" placeholder="Título" required />
+    <input type="text" id="descricao" placeholder="Descrição" required />
+    <input type="date" id="data" required />
+    <input type="time" id="hora" required />
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <div id="task-list">
+    <p>Carregando tarefas...</p>
+  </div>
+
+  <script src="/scripts.js"></script>
+</body>
+</html>

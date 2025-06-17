@@ -36,21 +36,16 @@ A solução envolveu ajustar a lógica das rotas e garantir que os dados fossem 
 
 Instale as dependências:
 
-bash
-Copiar
-Editar
 npm install
-Crie um arquivo .env com as variáveis de ambiente (chave da Supabase, URL do banco etc.):
 
-ini
-Copiar
-Editar
+
+Crie um arquivo .env com as variáveis de ambiente (chave da Supabase, URL do banco etc.):
 SUPABASE_URL=...
 SUPABASE_KEY=...
-Inicie o servidor:
 
-bash
-Copiar
-Editar
+inicie o servidor
 node server.js
+
+
 Acesse em http://localhost:3000
+

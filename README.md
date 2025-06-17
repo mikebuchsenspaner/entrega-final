@@ -1,28 +1,56 @@
-Este projeto consiste em uma aplicação web desenvolvida com Node.js, Express.js e Supabase, com o objetivo de funcionar como uma agenda digital de compromissos e tarefas. A proposta é oferecer uma ferramenta simples e eficiente para que os usuários possam cadastrar, visualizar e organizar suas atividades de forma prática.
+# Agenda de Compromissos
 
-A estrutura da aplicação segue o padrão MVC (Model-View-Controller), permitindo uma separação clara entre a lógica de negócio, a interface e o gerenciamento dos dados. As informações são armazenadas em um banco de dados PostgreSQL, disponibilizado via Supabase, e o frontend consome as rotas do backend por meio da Fetch API.
+Este projeto é uma aplicação web simples para organização de tarefas por data, desenvolvida como parte da entrega final do curso. A aplicação permite criar e visualizar tarefas com base em suas datas de agendamento, sendo ideal para uso pessoal ou acadêmico.
 
- Funcionalidades
-Cadastro de tarefas com título, descrição, data e hora
+## 🔧 Tecnologias Utilizadas
 
-Exibição automática das tarefas em formato de tabela
+- Node.js
+- Express.js
+- Supabase (PostgreSQL na nuvem)
+- EJS (para renderizar as views)
+- HTML/CSS/JavaScript
+- dotenv
+- Body-parser (se usado)
+- Cors
 
-Armazenamento seguro dos dados no Supabase
+## 🚀 Funcionalidades
 
-Interface amigável acessível via navegador
+- ✅ Criação de tarefas com data e descrição
+- 📅 Organização das tarefas por data
+- 🗑️ Exclusão de tarefas
+- 🌐 Interface web simples com páginas EJS
 
-Tecnologias Utilizadas
-Node.js e Express.js (servidor e rotas)
+## 🧠 Desafios Enfrentados
 
-Supabase com PostgreSQL (armazenamento de dados)
+Durante o desenvolvimento, um dos maiores desafios foi integrar a criação de tarefas no banco de dados com a exibição dessas tarefas nas páginas da aplicação. No início, as tarefas eram enviadas corretamente ao Supabase, mas não apareciam na interface do usuário.
 
-HTML, CSS e JavaScript (frontend)
+A solução envolveu ajustar a lógica das rotas e garantir que os dados fossem buscados e renderizados corretamente nas views. Foram feitos ajustes no controller e na view EJS para sincronizar a exibição dos dados recém-criados, resolvendo o problema.
 
-Fetch API (comunicação entre frontend e backend)
+## 🛠️ Como Executar Localmente
 
-dotenv (gestão de variáveis de ambiente)
+1. Clone este repositório:
+   ```bash
+   git clone <URL_DO_REPO>
+   cd <PASTA_DO_PROJETO>
 
-Desafios e Soluções
-Um dos principais desafios enfrentados foi a exibição das tarefas cadastradas de forma organizada na interface do usuário. Inicialmente, houve dificuldades na integração entre o backend e o frontend para apresentar os dados corretamente. A solução adotada foi utilizar a Fetch API para buscar os dados em formato JSON e inseri-los dinamicamente no DOM, estruturando-os em uma tabela clara e funcional. Essa abordagem garantiu uma visualização mais intuitiva e uma experiência de uso fluida.
 
+Instale as dependências:
 
+bash
+Copiar
+Editar
+npm install
+Crie um arquivo .env com as variáveis de ambiente (chave da Supabase, URL do banco etc.):
+
+ini
+Copiar
+Editar
+SUPABASE_URL=...
+SUPABASE_KEY=...
+Inicie o servidor:
+
+bash
+Copiar
+Editar
+node server.js
+Acesse em http://localhost:3000
